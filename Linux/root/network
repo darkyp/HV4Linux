@@ -1,0 +1,13 @@
+#!/bin/bash
+# example network setup
+echo "Setting up networking"
+ip tuntap add vlan123 mode tap
+ip link set dev vlan123 address aa:e5:4e:81:10:c8
+ip link set dev vlan123 up
+touch /run/dhclient.leases
+/bin/vsocktap VLAN123 vlan123 &
+echo "dhclient starting"
+dhclient -1 -4
+echo "dhclient result $?"
+echo "Starting SSH"
+/etc/init.d/ssh start

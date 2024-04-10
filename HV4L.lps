@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="HV4L.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="4"/>
+        <CursorPos X="16" Y="17"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Main"/>
+        <TopLine Value="206"/>
+        <CursorPos X="11" Y="220"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="JSON.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="951"/>
+        <CursorPos X="3" Y="956"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="common.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Common"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="166"/>
+        <CursorPos X="3" Y="168"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="hcs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="HCS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="56"/>
+        <CursorPos Y="93"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vmframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmVM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="VMFrame"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="485"/>
+        <CursorPos X="15" Y="499"/>
+        <UsageCount Value="213"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="consoleframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmConsole"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="ConsoleFrame"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="1543"/>
+        <CursorPos Y="1565"/>
+        <UsageCount Value="212"/>
+        <Bookmarks Count="1">
+          <Item0 X="22" Y="263"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="pcap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22" Y="7"/>
+        <UsageCount Value="205"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="circularlist.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CircularList"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="31"/>
+        <CursorPos X="9" Y="42"/>
+        <UsageCount Value="204"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="streams.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Streams"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="202"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ttyframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTTY"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="16"/>
+        <CursorPos Y="43"/>
+        <UsageCount Value="205"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="commoncontrols.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCommon"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="26" Y="4"/>
+        <UsageCount Value="164"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vmeditform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmVMEdit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="59"/>
+        <CursorPos X="34" Y="87"/>
+        <UsageCount Value="164"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="editdiskform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmEditDisk"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="EditDiskForm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="149"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="newvhdform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmNewVHD"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="NewVHDForm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="57"/>
+        <CursorPos X="7" Y="85"/>
+        <UsageCount Value="145"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="progressform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProgress"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ProgressForm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="46" Y="45"/>
+        <UsageCount Value="143"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vhd.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="VHD"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="44"/>
+        <CursorPos X="32" Y="59"/>
+        <UsageCount Value="142"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="console.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Console"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9"/>
+        <CursorPos X="44" Y="26"/>
+        <UsageCount Value="85"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\wincontrol.inc"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="7521"/>
+        <CursorPos Y="7539"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\lclintfh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos X="10" Y="64"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\winapi.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="311"/>
+        <CursorPos Y="330"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1462"/>
+        <CursorPos X="3" Y="1466"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1885"/>
+        <CursorPos X="15" Y="1906"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1217"/>
+        <CursorPos X="38" Y="1229"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\objpas\classes\streams.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="59"/>
+        <CursorPos X="8" Y="65"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\font.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1315"/>
+        <CursorPos X="3" Y="1336"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\packages\fcl-image\src\fpcanvas.pp"/>
+        <UnitName Value="FPCanvas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="5" Y="45"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\packages\fcl-image\src\fphelper.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="68"/>
+        <CursorPos X="3" Y="70"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\interfacebase.pp"/>
+        <UnitName Value="InterfaceBase"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="197"/>
+        <CursorPos X="3" Y="213"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\interfaces\win32\win32winapi.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1672"/>
+        <CursorPos X="31" Y="1685"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\win\wininc\messages.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1159"/>
+        <CursorPos X="6" Y="1174"/>
+        <UsageCount Value="1"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\components\lazutils\laztracer.pas"/>
+        <UnitName Value="LazTracer"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos Y="50"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2941"/>
+        <CursorPos Y="2957"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1623"/>
+        <CursorPos X="14" Y="1641"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\objpas\classes\lists.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="798"/>
+        <CursorPos X="3" Y="800"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1532"/>
+        <CursorPos X="11" Y="1542"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\comctrls.pp"/>
+        <UnitName Value="ComCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1598"/>
+        <CursorPos X="15" Y="1611"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\extctrls.pp"/>
+        <UnitName Value="ExtCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="178"/>
+        <CursorPos X="14" Y="197"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="362"/>
+        <CursorPos Y="381"/>
+        <UsageCount Value="14"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\dialogs.pp"/>
+        <UnitName Value="Dialogs"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\lclmessageglue.pas"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="100"/>
+        <CursorPos Y="116"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\win\syswin.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="517"/>
+        <CursorPos X="3" Y="520"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\objpas\sysutils\sysutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="244"/>
+        <CursorPos X="13" Y="260"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="38"/>
+        <CursorPos Y="55"/>
+        <UsageCount Value="15"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\buttons.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="152"/>
+        <CursorPos Y="169"/>
+        <UsageCount Value="15"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\packages\rtl-extra\src\win\winsock.pp"/>
+        <UnitName Value="WinSock"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="8" Y="50"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\win\wininc\base.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="69"/>
+        <CursorPos X="6" Y="87"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\pagecontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos Y="43"/>
+        <UsageCount Value="14"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\inc\text.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="20" Y="33"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\win\sysfile.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="71"/>
+        <CursorPos Y="86"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\win\sysos.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="339"/>
+        <CursorPos X="13" Y="352"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\inc\textrec.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <CursorPos X="5" Y="51"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\win\tthread.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="24" Y="14"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\objpas\classes\classes.inc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\inc\threadh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="108"/>
+        <CursorPos X="11" Y="123"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\inc\threadvr.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="97"/>
+        <CursorPos X="4" Y="107"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\win\wininc\errors.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="226"/>
+        <CursorPos X="41" Y="238"/>
+        <UsageCount Value="5"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\lclclasses.pp"/>
+        <UnitName Value="LCLClasses"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="3" Y="43"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\fpc\3.2.2\source\rtl\objpas\classes\compon.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="132"/>
+        <CursorPos X="3" Y="135"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\controlcanvas.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="78"/>
+        <CursorPos X="26" Y="90"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\Programs\Lazarus\lcl\include\canvas.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="39" Y="49"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="249" Column="12" TopLine="236"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="98" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="228" Column="36" TopLine="197"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="283" TopLine="249"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="238" Column="3" TopLine="236"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="129" TopLine="116"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="65" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="67" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="231" Column="9" TopLine="212"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="86" Column="22" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="278" Column="38" TopLine="265"/>
+      </Position>
+      <Position>
+        <Filename Value="vmframe.pas"/>
+        <Caret Line="458" Column="18" TopLine="451"/>
+      </Position>
+      <Position>
+        <Filename Value="vmframe.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="vmframe.pas"/>
+        <Caret Line="499" Column="15" TopLine="485"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="279" TopLine="272"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="280" TopLine="272"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="281" TopLine="272"/>
+      </Position>
+      <Position>
+        <Filename Value="consoleframe.pas"/>
+        <Caret Line="1562" TopLine="1543"/>
+      </Position>
+      <Position>
+        <Filename Value="consoleframe.pas"/>
+        <Caret Line="1563" TopLine="1543"/>
+      </Position>
+      <Position>
+        <Filename Value="consoleframe.pas"/>
+        <Caret Line="1564" TopLine="1543"/>
+      </Position>
+      <Position>
+        <Filename Value="consoleframe.pas"/>
+        <Caret Line="1565" TopLine="1543"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="287" Column="17" TopLine="254"/>
+      </Position>
+      <Position>
+        <Filename Value="circularlist.pas"/>
+        <Caret Line="63" Column="28" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="circularlist.pas"/>
+        <Caret Line="41" Column="44" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="220" Column="11" TopLine="206"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="91" Column="11" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="220" Column="11" TopLine="206"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default">
+        <Mode Name="default">
+          <local>
+            <CommandLineParams Value="debug"/>
+          </local>
+        </Mode>
+      </Modes>
+    </RunParams>
+    <HistoryLists>
+      <List Name="LaunchingApplication" Type="File" Count="1">
+        <Item1 Value="C:\Windows\system32\cmd.exe /C ${TargetCmdLine}"/>
+      </List>
+      <List Name="CommandLineParameters" Count="2">
+        <Item1 Value="debug"/>
+        <Item2 Value="xdebug"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+</CONFIG>

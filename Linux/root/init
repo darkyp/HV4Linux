@@ -1,0 +1,16 @@
+#!/bin/bash
+ln -s /proc/self/fd /dev/fd
+mknod /dev/kmsg c 1 11
+mknod /dev/ttyS0 c 4 64
+exec > >(/bin/klog) 2>&1
+hostname hv4linux
+export TERM=xterm
+export HOME=/root
+mount -t tmpfs tmpfs /tmp
+mount -t tmpfs tmpfs /run
+/network &
+/hostcom.php
+mount /dev/sda / -o remount,ro
+sync
+poweroff -p -f
+echo "Done"

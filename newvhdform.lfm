@@ -1,0 +1,75 @@
+object frmNewVHD: TfrmNewVHD
+  Left = 400
+  Height = 94
+  Top = 250
+  Width = 320
+  Caption = 'New VHD'
+  ClientHeight = 94
+  ClientWidth = 320
+  Position = poOwnerFormCenter
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 37
+    Width = 27
+    Caption = 'Path:'
+    ParentColor = False
+  end
+  object btnSelPath: TButton
+    Left = 275
+    Height = 25
+    Top = 31
+    Width = 29
+    Anchors = [akTop, akRight]
+    Caption = 'Sel'
+    OnClick = btnSelPathClick
+    TabOrder = 2
+  end
+  object btnCancel: TButton
+    Left = 229
+    Height = 25
+    Top = 61
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Cancel'
+    ModalResult = 2
+    OnClick = btnCancelClick
+    TabOrder = 4
+  end
+  object btnOK: TButton
+    Left = 152
+    Height = 25
+    Top = 61
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'OK'
+    Default = True
+    OnClick = btnOKClick
+    TabOrder = 3
+  end
+  object edtPath: TEdit
+    Left = 68
+    Height = 23
+    Top = 32
+    Width = 209
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 10
+    Width = 52
+    Caption = 'Size (MB):'
+    ParentColor = False
+  end
+  object edtSize: TEdit
+    Left = 68
+    Height = 23
+    Top = 6
+    Width = 52
+    Alignment = taRightJustify
+    TabOrder = 0
+  end
+end

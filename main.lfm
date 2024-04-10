@@ -1,0 +1,259 @@
+object frmMain: TfrmMain
+  Left = 382
+  Height = 480
+  Top = 246
+  Width = 740
+  Caption = 'HV 4 Linux'
+  ClientHeight = 480
+  ClientWidth = 740
+  OnActivate = onAppActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDeactivate = onAppDeactivate
+  Position = poScreenCenter
+  object pcMain: TPageControl
+    Left = 0
+    Height = 480
+    Top = 0
+    Width = 740
+    ActivePage = tsVMs
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object tsVMs: TTabSheet
+      Caption = 'VMs'
+      ClientHeight = 452
+      ClientWidth = 732
+      object pnlLog: TPanel
+        Left = 0
+        Height = 166
+        Top = 286
+        Width = 732
+        Align = alBottom
+        BevelOuter = bvNone
+        BorderWidth = 3
+        ClientHeight = 166
+        ClientWidth = 732
+        TabOrder = 0
+        object lvLog: TListView
+          Left = 3
+          Height = 160
+          Top = 3
+          Width = 726
+          Align = alClient
+          Columns = <          
+            item
+              Caption = 'Log'
+              Width = 35
+            end>
+          HideSelection = False
+          OwnerData = True
+          ReadOnly = True
+          RowSelect = True
+          ShowColumnHeaders = False
+          TabOrder = 0
+          ViewStyle = vsReport
+          OnData = lvLogData
+          OnResize = lvLogResize
+        end
+      end
+      object spl: TSplitter
+        Cursor = crVSplit
+        Left = 0
+        Height = 8
+        Top = 278
+        Width = 732
+        Align = alBottom
+        ResizeAnchor = akBottom
+      end
+      object Panel2: TPanel
+        Left = 0
+        Height = 278
+        Top = 0
+        Width = 732
+        Align = alClient
+        BevelOuter = bvNone
+        BorderWidth = 3
+        ClientHeight = 278
+        ClientWidth = 732
+        TabOrder = 2
+        object lvVM: TListView
+          Left = 3
+          Height = 272
+          Top = 3
+          Width = 726
+          Align = alClient
+          Columns = <          
+            item
+              Caption = 'Name'
+              Width = 100
+            end          
+            item
+              Caption = 'Type'
+              Width = 90
+            end          
+            item
+              Caption = 'Owner'
+              Width = 80
+            end          
+            item
+              Caption = 'Runtime ID'
+              Width = 150
+            end          
+            item
+              Caption = 'State'
+              Width = 80
+            end>
+          HideSelection = False
+          OwnerData = True
+          PopupMenu = pmVMs
+          ReadOnly = True
+          RowSelect = True
+          TabOrder = 0
+          ViewStyle = vsReport
+          OnData = lvVMData
+          OnDblClick = miStartClick
+          OnKeyPress = lvVMKeyPress
+          OnSelectItem = lvVMSelectItem
+        end
+      end
+    end
+    object tsNetworks: TTabSheet
+      Caption = 'Networks'
+      ClientHeight = 452
+      ClientWidth = 732
+      object pnlDetail: TPanel
+        Left = 0
+        Height = 70
+        Top = 382
+        Width = 732
+        Align = alBottom
+        BevelOuter = bvNone
+        BorderWidth = 3
+        ClientHeight = 70
+        ClientWidth = 732
+        TabOrder = 0
+        object Label1: TLabel
+          Left = 4
+          Height = 15
+          Top = 9
+          Width = 27
+          Caption = 'Path:'
+          ParentColor = False
+        end
+        object edtPath: TEdit
+          Left = 40
+          Height = 23
+          Top = 4
+          Width = 347
+          Color = clBtnFace
+          ReadOnly = True
+          TabOrder = 0
+        end
+      end
+      object lvNet: TListView
+        Left = 0
+        Height = 382
+        Top = 0
+        Width = 732
+        Align = alClient
+        Columns = <        
+          item
+            Caption = 'Name'
+            Width = 100
+          end        
+          item
+            Alignment = taRightJustify
+            Caption = 'RXP'
+            Width = 70
+          end        
+          item
+            Alignment = taRightJustify
+            Caption = 'TXP'
+            Width = 70
+          end        
+          item
+            Alignment = taRightJustify
+            Caption = 'RXB'
+            Width = 70
+          end        
+          item
+            Alignment = taRightJustify
+            Caption = 'TXB'
+            Width = 70
+          end>
+        HideSelection = False
+        ReadOnly = True
+        RowSelect = True
+        TabOrder = 1
+        ViewStyle = vsReport
+        OnSelectItem = lvNetSelectItem
+      end
+    end
+  end
+  object pmVM: TPopupMenu
+    Left = 54
+    Top = 120
+    object miStart: TMenuItem
+      Caption = 'Start'
+      OnClick = miStartClick
+    end
+    object miShutdown: TMenuItem
+      Caption = 'Shutdown'
+      OnClick = miShutdownClick
+    end
+    object miKill: TMenuItem
+      Caption = 'Kill'
+      OnClick = miKillClick
+    end
+    object Separator1: TMenuItem
+      Caption = '-'
+    end
+    object miEdit: TMenuItem
+      Caption = 'Edit'
+      OnClick = miEditClick
+    end
+    object miDelete: TMenuItem
+      Caption = 'Delete'
+      OnClick = miDeleteClick
+    end
+  end
+  object pmVMs: TPopupMenu
+    Left = 92
+    Top = 120
+    object miAdd: TMenuItem
+      Caption = 'Add'
+      OnClick = miAddClick
+    end
+    object miRefresh: TMenuItem
+      Caption = 'Refresh'
+      OnClick = miRefreshClick
+    end
+  end
+  object tmr: TTimer
+    Enabled = False
+    OnTimer = tmrTimer
+    Left = 132
+    Top = 120
+  end
+  object trayIcon: TTrayIcon
+    PopUpMenu = pmTray
+    Hint = 'HV 4 Linux'
+    Visible = True
+    OnClick = trayIconClick
+    Left = 242
+    Top = 141
+  end
+  object pmTray: TPopupMenu
+    Left = 301
+    Top = 143
+    object miShow: TMenuItem
+      Caption = 'Show'
+      OnClick = trayIconClick
+    end
+    object miExit: TMenuItem
+      Caption = 'Exit'
+      OnClick = miExitClick
+    end
+  end
+end

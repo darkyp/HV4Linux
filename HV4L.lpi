@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="HV4L"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+      <Item Name="Distribution">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="Distribution\HV4L"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="Delphi"/>
+            </SyntaxOptions>
+          </Parsing>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <DebugInfoType Value="dsDwarf2Set"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="HV4L.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Main"/>
+      </Unit>
+      <Unit>
+        <Filename Value="JSON.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="common.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Common"/>
+      </Unit>
+      <Unit>
+        <Filename Value="hcs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="HCS"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vmframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmVM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="VMFrame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="consoleframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmConsole"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="ConsoleFrame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="pcap.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="circularlist.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CircularList"/>
+      </Unit>
+      <Unit>
+        <Filename Value="streams.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Streams"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ttyframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTTY"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="commoncontrols.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCommon"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vmeditform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmVMEdit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="editdiskform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmEditDisk"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="EditDiskForm"/>
+      </Unit>
+      <Unit>
+        <Filename Value="newvhdform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmNewVHD"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="NewVHDForm"/>
+      </Unit>
+      <Unit>
+        <Filename Value="progressform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProgress"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ProgressForm"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vhd.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="VHD"/>
+      </Unit>
+      <Unit>
+        <Filename Value="console.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Console"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="Distribution\HV4L_dbg"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+        <Enabled Value="False"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+        <Enabled Value="False"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+        <Enabled Value="False"/>
+      </Item>
+      <Item>
+        <Name Value="Exception"/>
+      </Item>
+      <Item>
+        <Name Value="EConvertError"/>
+        <Enabled Value="False"/>
+      </Item>
+      <Item>
+        <Name Value="UserException"/>
+        <Enabled Value="False"/>
+      </Item>
+      <Item>
+        <Name Value="HCSException"/>
+        <Enabled Value="False"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

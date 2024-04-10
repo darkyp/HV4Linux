@@ -1,0 +1,273 @@
+object frmVMEdit: TfrmVMEdit
+  Left = 401
+  Height = 326
+  Top = 250
+  Width = 309
+  Caption = 'Edit VM'
+  ClientHeight = 326
+  ClientWidth = 309
+  Constraints.MinHeight = 233
+  Constraints.MinWidth = 309
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 59
+    Width = 36
+    Caption = 'Kernel:'
+    ParentColor = False
+  end
+  object btnSelKernel: TButton
+    Left = 267
+    Height = 25
+    Top = 53
+    Width = 29
+    Anchors = [akTop, akRight]
+    Caption = 'Sel'
+    OnClick = btnSelKernelClick
+    TabOrder = 2
+  end
+  object edtKernel: TEdit
+    Left = 52
+    Height = 23
+    Top = 54
+    Width = 217
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 1
+  end
+  object btnOK: TButton
+    Left = 144
+    Height = 25
+    Top = 289
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'OK'
+    Default = True
+    OnClick = btnOKClick
+    TabOrder = 7
+  end
+  object btnCancel: TButton
+    Left = 221
+    Height = 25
+    Top = 289
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 9
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 85
+    Width = 20
+    Caption = 'Init:'
+    ParentColor = False
+  end
+  object btnSelInit: TButton
+    Left = 267
+    Height = 25
+    Top = 79
+    Width = 29
+    Anchors = [akTop, akRight]
+    Caption = 'Sel'
+    OnClick = btnSelInitClick
+    TabOrder = 4
+  end
+  object edtInit: TEdit
+    Left = 52
+    Height = 23
+    Top = 80
+    Width = 217
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 3
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 112
+    Width = 60
+    Caption = 'CPU count:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 128
+    Height = 15
+    Top = 111
+    Width = 99
+    Caption = 'Memory size (MB):'
+    ParentColor = False
+  end
+  object edtCPU: TEdit
+    Left = 76
+    Height = 23
+    Top = 107
+    Width = 40
+    TabOrder = 5
+  end
+  object edtRAM: TEdit
+    Left = 236
+    Height = 23
+    Top = 107
+    Width = 60
+    TabOrder = 6
+  end
+  object pc: TPageControl
+    Left = 8
+    Height = 151
+    Top = 135
+    Width = 288
+    ActivePage = tsStartup
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabIndex = 2
+    TabOrder = 8
+    object tsDisks: TTabSheet
+      Caption = 'Disks'
+      ClientHeight = 123
+      ClientWidth = 280
+      object lvDisks: TListView
+        Left = 0
+        Height = 123
+        Top = 0
+        Width = 280
+        Align = alClient
+        Columns = <        
+          item
+            Caption = 'Name'
+            Width = 80
+          end        
+          item
+            Caption = 'ID'
+            Width = 40
+          end        
+          item
+            Caption = 'Size'
+            Width = 70
+          end        
+          item
+            Caption = 'RO'
+            Width = 40
+          end        
+          item
+            Caption = 'Use'
+            Width = 40
+          end>
+        HideSelection = False
+        OwnerData = True
+        PopupMenu = pmDisks
+        ReadOnly = True
+        RowSelect = True
+        TabOrder = 0
+        ViewStyle = vsReport
+        OnData = lvDisksData
+        OnDblClick = miEditClick
+        OnSelectItem = lvDisksSelectItem
+      end
+    end
+    object tsNetworks: TTabSheet
+      Caption = 'Networks'
+      ClientHeight = 123
+      ClientWidth = 280
+      object lvNetworks: TListView
+        Left = 0
+        Height = 123
+        Top = 0
+        Width = 280
+        Align = alClient
+        Checkboxes = True
+        Columns = <        
+          item
+            Caption = 'Name'
+            Width = 90
+          end        
+          item
+            Caption = 'ID'
+            Width = 150
+          end>
+        HideSelection = False
+        ReadOnly = True
+        RowSelect = True
+        TabOrder = 0
+        ViewStyle = vsReport
+        OnSelectItem = lvDisksSelectItem
+      end
+    end
+    object tsStartup: TTabSheet
+      Caption = 'Startup'
+      ClientHeight = 123
+      ClientWidth = 280
+      object mmoStartup: TMemo
+        Left = 0
+        Height = 123
+        Top = 0
+        Width = 280
+        Align = alClient
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        ParentFont = False
+        TabOrder = 0
+        WordWrap = False
+      end
+    end
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 15
+    Top = 7
+    Width = 35
+    Caption = 'Name:'
+    ParentColor = False
+  end
+  object edtName: TEdit
+    Left = 52
+    Height = 23
+    Top = 2
+    Width = 244
+    TabOrder = 0
+  end
+  object Label6: TLabel
+    Left = 8
+    Height = 15
+    Top = 33
+    Width = 14
+    Caption = 'ID:'
+    ParentColor = False
+  end
+  object edtID: TEdit
+    Left = 52
+    Height = 23
+    Top = 28
+    Width = 244
+    Color = clBtnFace
+    ReadOnly = True
+    TabOrder = 10
+  end
+  object pmDisk: TPopupMenu
+    OnPopup = pmDiskPopup
+    Left = 20
+    Top = 228
+    object miEnabled: TMenuItem
+      Caption = 'Enabled'
+      OnClick = miEnabledClick
+    end
+    object miEdit: TMenuItem
+      Caption = 'Edit'
+      OnClick = miEditClick
+    end
+    object miDelete: TMenuItem
+      Caption = 'Delete'
+      OnClick = miDeleteClick
+    end
+  end
+  object pmDisks: TPopupMenu
+    Left = 76
+    Top = 228
+    object miAdd: TMenuItem
+      Caption = 'Add'
+      OnClick = miAddClick
+    end
+  end
+end
