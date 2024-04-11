@@ -36,8 +36,9 @@ right from the start, so one can see the full boot process provided WSL2 can be 
 So what this project does is provide one with WSL2 without WSL2. It calls the necessary APIs to create and boot the Linux kernel VM. I have provided a custom init process that mounts the rootfs chroots to it
 and tries to execute /init from the mounted rootfs that can as well be a bash script. If /init is not found, a /bin/bash shell is started for maintenance. If this fails - well, kernel panic.
 <p>The above description should be enough to get you started with a basic system. There are more tools in this repository that will have their description later...
-<p>For an easier start install WSL2, grab the kernel and initrd.img (\Program Files\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForLinux...), some distribution's VHD file and set them up as a VM in the app.
+<p>For an easier start install WSL2, grab the kernel (\Program Files\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForLinux...), some distribution's VHD file and initrd.img from this repo and set them up as a VM in the app.
 You can uninstall WSL2 after that.
+<p>...or download a ready package that I prepared with a base debian jessie from <a href="https://drive.google.com/file/d/1toTUbE-izzFPZd46OFTQ716E3mqndg_c/view">here</a>. The package has three configurations all using the same files - a read/write (the first one) and two read/only ones that can be started at the same time. For the networking to work, install NPCap and modify the /network file with the name of your Windows adapter.
 
 # TODO
 <p>More to come...
